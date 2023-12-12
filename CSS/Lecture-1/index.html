@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        } */
+
+        h1,h2{
+            text-align: center;
+            /* margin: 40px; */
+            /* margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: 40px;
+            margin-right: 40px; */
+          /* top/right/bottom/left */
+            margin: 10px 20px 30px 40px;
+            border: 2px solid red;
+            padding: 30px;
+
+
+        }
+        h3{
+            border: 2px solid black;
+        }
+        
+
+        #heading{
+            background-color: aqua;
+        }
+
+        .heading-2{
+            background-color: blue;
+        }
+        *{
+            color: red;
+        }
+        /* div p {
+  background-color: yellow;
+} */
+
+div>p{
+    background-color: brown;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1  id="heading">I am Santosh Kumar.</h1>
+    <h2  class="heading-2">I am Santosh Kumar.</h2>
+    <h3 >I am Santosh Kumar.</h3>
+    <h4>I am Santosh Kumar.</h4>
+    <h5>I am Santosh Kumar.</h5>
+    <h6>I am Santosh Kumar.</h6>
+
+
+    <!-- Combinator   -->
+
+    <!-- Desendent Selector -->
+
+    <!-- <h2>Descendant Selector</h2>
+
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph <p>This is pawan</p> 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p> -->
+
+
+<!-- Child combinatoe/ h1>p -->
+
+<!-- <h2>Child Selector</h2> -->
+
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
+</div>
+
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
+<!-- CSS Specificity -->
+
+<!-- 
+    S-Inline style/1000 
+    I-Id(#)/100
+    C-Class(.)/10/psedo Class/attribute selector
+    T-Type(h1)/1/psedo element
+    U-universal Selector/*/0
+
+
+
+
+
+-->
+    
+</body>
+</html>

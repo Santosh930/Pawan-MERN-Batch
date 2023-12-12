@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to JavaScript</h1>
+    <button onclick="document.getElementById('heading').style.fontSize='50px'">Apply font size</button>
+    <button onclick="document.getElementById('heading').style.color='red'">Apply text color</button>
+    <button onclick="document.getElementById('heading').style.padding='50px'">Apply padding</button>
+    <button onclick="document.getElementById('heading').style.backgroundColor='green'">Apply background-color</button>
+    <button onclick="document.getElementById('heading').style.margin='50px'">Apply margin</button>
+    <h1>My First JavaScript</h1>
+    <button onclick="document.getElementById('demo').innerHTML=Date()" >Click me to show current Date and Time</button>
+    <p id="demo"></p>
+    <button onclick="document.getElementById('pawan').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+    <img id="pawan" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="123">
+    <button onclick="document.getElementById('pawan').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button><br><br>
+
+    <!-- <button onclick="document.getElementById('demo')">Pawan Sharma</button> -->
+    <script>document.write(5+20);
+    console.log(3+4);
+    </script>
+</body>
+</html>
+
+<script src="script.js"></script>

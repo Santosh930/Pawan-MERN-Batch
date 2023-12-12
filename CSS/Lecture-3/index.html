@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img{
+            position:absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            margin-bottom: 100px;
+        } */
+        .container{
+            margin-top: 100px;
+            position: relative;
+        }
+        .black{
+            position: relative;
+            height: 100px;
+            background-color:gray;
+            border: 1px solid red;
+            z-index: 1;
+            color: white;
+        }
+        .green{
+            position: absolute;
+  z-index: 2; /* green box will be above black box */
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+        }
+        .red{
+            position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  background: red;
+  height: 60px;  
+  width: 70%;
+  left: 50px;
+  top: 50px;
+        }
+        .overflow{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            color: green;
+            
+        }
+        .float{
+            margin-bottom: 100px;
+        }
+        .float>img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <p style="background-color: aqua; display: inline-block;">This is Block Element</p>
+    <p style="background-color: aqua; display: inline-block;">This is Block Element</p>
+    <b style="background-color: red; display: block;">This is inline element</b>
+    <h1>Z-index Property</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae ex dicta vero est eum repudiandae temporibus eius deleniti recusandae! Voluptate tenetur veniam quidem exercitationem cum voluptates ullam reiciendis commodi.</p>
+    <img width="100%" height="200px" src="https://images.unsplash.com/photo-1701084412727-1f3e01088a5f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8" alt="123">
+    <!-- <div class="container">
+        <div class="black">Black Box</div>
+        <div class="green">Green Box</div>
+        <div class="red">Red Box</div>
+    </div> -->
+ <!-- <div class="overflow">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ipsum veniam aliquam cupiditate velit repellendus accusamus ab fugiat, ipsa libero est maxime nulla, omnis corporis et voluptatum eaque unde! Architecto!Lorem
+ </div> -->
+
+ <!-- float left/right -->
+ <p class="float"><img width="200px" height="200px" src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="apple"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus, totam labore eius enim natus rem ipsum fugit maxime laboriosam vitae fugiat ut unde incidunt minus in odit est dolorem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam deleniti quibusdam maiores, iste, mollitia accusamus culpa impedit veniam totam a tempora error, itaque doloribus architecto nihil suscipit consequuntur! Quod.</p>
+    
+</body>
+</html>
