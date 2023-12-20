@@ -218,3 +218,24 @@ X Y Z
 
 // console.log(~10);//-11
 // console.log(~-10);//9
+
+// console.log(7 & 0);//0
+/*   0110
+     1001
+     1111
+
+
+
+*/
+// console.log(6 && 9);
+// console.log(6 | 9);
+// console.log(0 || 0 || 0|| 0.0009 || 0);
+// console.log(0 && 0 && 0 && 0.0009 && 0);
+
+// console.log(~20)
+// console.log(~200)
+// console.log(~30)
+// console.log(~-20)
+// console.log(~-200)
+
+// console.log(~5);
