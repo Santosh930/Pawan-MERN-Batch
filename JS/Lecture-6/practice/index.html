@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TodoApp</h1>
+    <button onclick="alert('Hello I am a onClick event!')">Click me!</button>
+    <button onclick="myfunc()">Click me!</button>
+    <button id="btn">Submit</button><br><br>
+    <form action="">
+        <input type="text" name="" id="name" placeholder="Enter your name"><br><br>
+        <input type="email" name="" id="email"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="display"></div>
+</body>
+</html>
+<script>
+
+    let form=document.querySelector('form');
+    form.addEventListener('submit',Data);
+
+    let arr=[1,2];
+
+    function Data(){
+        event.preventDefault();
+        // console.log('inside function');
+        let name=document.getElementById('name').value;
+        let email=document.getElementById('email').value;
+        // console.log(name);
+        // console.log(email);
+        //[{},{},{}]
+        let obj={
+            newName:name,
+            newEmail:email
+        }
+        arr.push(obj);
+        let div=document.querySelector('#display');
+
+        arr.map(function(elem,index,arr){
+            div.append(elem);
+
+        })
+        
+        console.log(obj);
+        console.log(arr);
+    }
+
+    // let btn=document.getElementById('btn');
+    // btn.addEventListener('click',myfunc);
+
+    // function myfunc(){
+    //     let a=20;
+    //     let b=30;
+    //     console.log(a+b);
+    // }
+
+    //forEach loop
+
+    // let arr=[1,2,3,4,5,6,7,8,9,10];
+
+    // for(let i=0;i<arr.length;i++){
+    //     console.log(arr[i]);
+    // }
+
+//    let arr1= arr.forEach(function(elem,index,arr){
+//         // console.log(elem);
+//         return elem;
+//     });
+///map 
+    // let arr2=arr.map(function(elem,index,arr){
+    //     return elem;
+    // });
+
+//filter 
+// let arr3=arr.filter(function(elem,index,arr){
+//     return elem%2==0;
+// }).map(function(elem,ind,arr){
+
+// })
+
+// let arr4=arr.reduce(function(acc,elem){
+//     return acc+elem;
+// },15);
+// let sum=15;
+// for(let i=0;i<arr.length;i++){
+//     sum += arr[i];
+
+// }
+// console.log(sum);
+//     console.log(arr1);
+//     console.log(arr2);
+//     console.log(arr3);
+//     console.log(arr4);
+
+//event listner
+
+
+
+
+</script>

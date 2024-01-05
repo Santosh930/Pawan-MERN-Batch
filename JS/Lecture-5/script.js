@@ -95,15 +95,138 @@ let 2DArr=[
 
 */
 
-let TwoDArr=[
-    [1,2,3],
-   [4,5,6],
-    [7,8,9]
-];
+// let TwoDArr=[
+//     [1,2,3],
+//    [4,5,6],
+//     [7,8,9]
+// ];
+
+/* 
+
+
+
+
+
+
+*/
 
 // // console.log(TwoDArr);
 // console.log(TwoDArr[1][2]) 
-for(let i=0;i<TwoDArr.length;i++){
-    console.log(TwoDArr[i][TwoDArr.length-1-i]);
-}
+// for(let i=0;i<TwoDArr.length;i++){
+//     console.log(TwoDArr[i][i]);
+// }
+
+//
+
+
+
+//switch case
+
+
+// let ans="Santosh";
+
+// switch(ans){
+//     case "Pawan":{
+//         console.log("This is pawan!");
+        
+//     }
+//     case "Aman":{
+//         console.log("This is aman!");
+//         break;
+//     }
+//     case "Suman":{
+//         console.log("This is suman!");
+//         break;
+//     }
+//     case "Santosh":{
+//         console.log("This is Santosh!");
+//         break;
+//     }
+//     default: {
+//         console.log("No Any value matched!");
+//     }
+// }
+
+// Add(30,50);
+
+// function Add(a,b){
+//     // let a=30;
+//     // let b=20;
+//     // let result=a+b;
+//     // console.log(result);
+//     // return result;
+// }
+
+
+// let ans=Add(10,20);
+
+
+//arrow function
+
+
+// let sum=(a,b)=>{
+
+//     console.log(a+b);
+
+// }
+
+// sum(10,20);
+// console.log(ans);
+// Add(30,50);
+// Add(30,40);
+// Add(20,20);
+
+
+// let santo=new Function()
+// new Function (arg1 ,()=>{
+
+// })  
+
+
+
+//Date method
+
+
+// let newDate= new Date();
+// console.log(newDate.getFullYear());//2023
+// console.log(newDate.getHours());//17
+// console.log(newDate.getMinutes());//56
+// console.log(newDate.getDay());
+// console.log(newDate.getFullYear());
+
+
+//Number  
+
+
+// let x="12345";
+// let a=+x;
+// console.log(a+5);
+// let z=x+1;
+// console.log(z)//123451
+// let y=Number(x)+1;
+// console.log(y);//12346
+
+// console.log(typeof NaN);
+
+// let a=30;
+// let b=50;
+// console.log(Math.min(a,b));//30
+// console.log(Math.max(a,b));//50
+// console.log(Math.floor(20.8));//20
+// console.log(Math.ceil(20.3));//21
+// console.log(Math.round(20.5));
+// console.log(Math.round(20.7));
+// console.log(Math.floor(Math.random()*7 +1));
+// console.log(Math.floor(Math.random()*7 +1));
+// console.log(Math.floor(Math.random()*7 +1));
+// console.log(Math.floor(Math.random()*7 +1));
+// console.log(Math.floor(Math.random()*7 +1));
+// console.log(Math.floor(Math.random()*7 +1));
+// console.log(Math.random());
+// console.log(Math.random());
+// console.log(Math.random());
+// console.log(Math.random());
+
+
+
 
