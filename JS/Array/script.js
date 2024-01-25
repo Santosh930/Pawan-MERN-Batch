@@ -54,3 +54,41 @@
 
 // }
 // console.log(sum);
+
+// let arr=[1,2,3,4,5];
+// arr.shift();//remove element from starting
+// console.log(arr);
+
+// arr.unshift(10);
+// console.log(arr);
+
+
+// function Add(a,b){
+//     console.log(a+b);
+// }
+
+// console.log(arr);
+// let res=arr.map(function(el,i,arr){
+//     return arr;
+
+// });
+// console.log(res);
+
+// let arr1=[1,10,3,7,5];
+// let ans=arr1.sort((a,b)=>{
+//     return a-b;
+// });
+// console.log(ans);
+
+// 2) JavaScript Array directly (new keyword)
+// let arr=new Array();
+// // console.log(arr);
+// arr[0]=1;
+// console.log(arr);
+
+//3) JavaScript array constructor (new keyword)
+
+// let arr=new Array(1,2,3,4,5);
+// console.log(arr);
+
+
