@@ -60,20 +60,20 @@
 //3) By using an Object constructor
 
 
-function Add(id,name,email){
-    this.id=id,
-    this.name=name,
-    this.email=email
-}
+// function Add(id,name,email){
+//     this.id=id,
+//     this.name=name,
+//     this.email=email
+// }
 
 
-let obj1=new Add(1,'pawan','pawan@gmail.com');
-let obj2=new Add(2,'raman','pawan@gmail.com');
-let obj3=new Add(3,'santosh','pawan@gmail.com');
-let obj4=new Add(4,'sunil','pawan@gmail.com');
-let obj5=new Add(5,'anil','pawan@gmail.com');
+// let obj1=new Add(1,'pawan','pawan@gmail.com');
+// let obj2=new Add(2,'raman','pawan@gmail.com');
+// let obj3=new Add(3,'santosh','pawan@gmail.com');
+// let obj4=new Add(4,'sunil','pawan@gmail.com');
+// let obj5=new Add(5,'anil','pawan@gmail.com');
 
-console.log(Object.entries(obj1));
+// console.log(Object.entries(obj1));
 // console.log(obj5);
 // let obj1=new Add(1,'pawan','pawan@gmail.com');
 // let obj1=new Add(1,'pawan','pawan@gmail.com');
@@ -86,3 +86,24 @@ console.log(Object.entries(obj1));
 // let obj1=new Add(1,'pawan','pawan@gmail.com');
 // let obj1=new Add(1,'pawan','pawan@gmail.com');
 // let obj1=new Add(1,'pawan','pawan@gmail.com');
+
+  //freq map
+// let arr=[1,1,2,2,3,4,5,5,5,5,5];
+// let obj={};
+// for(let i=0;i<arr.length;i++){
+//     // console.log(obj[arr[i]]);
+//     if(obj[arr[i]]==undefined){
+//         obj[arr[i]]=1;
+//     }
+//     else{
+//         obj[arr[i]]++;
+        
+//     }
+// }
+
+// console.log(obj);
+// 1-2
+// 2-2
+// 3-1
+// 4-1
+// 5-5
