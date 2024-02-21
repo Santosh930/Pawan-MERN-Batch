@@ -15,10 +15,17 @@
 
 <b>Contents <b> <br><br>
 <hr>
- <a href="./HTML"> Introduction to HTML & Basic HTML Tag.</a> <br><br>
+ <a href="./HTML">HTML Lectures</a> <br><br>
 
 <hr>
 <a href="./CSS/">CSS Lectures</a><br><br>
+<hr>
+<a href="./JS/">JS Lectures</a><br><br>
+
+<hr>
+<a href="./BootStrap/">BootStrap Lectures</a><br><br>
+<hr>
+<a href="./Project/">Projects</a><br><br>
 
 <b>#Additional Resources<b>
 <hr>
