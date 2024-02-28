@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .movie {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movie App</h1>
+    <div>
+        <input type="text" id="searchInput" placeholder="Enter movie title">
+        <button onclick="searchMovies()">Search</button>
+    </div>
+
+    <div id="movie-container">
+        <!-- Movie posters will be displayed here -->
+    </div>
+
+    <script>
+        // Function to fetch movie data based on search query
+        async function searchMovies() {
+            const searchQuery = document.getElementById('searchInput').value;
+            const apiKey = '2a0e5d22';
+            const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}`);
+            const data = await response.json();
+            console.log(data);
+
+            displayMovies(data.Search);
+        }
+
+        // Function to display movie posters
+        function displayMovies(movies) {
+            const movieContainer = document.getElementById('movie-container');
+            movieContainer.innerHTML = ''; // Clear previous content
+
+            if (!movies) {
+                movieContainer.innerHTML = '<p>No movies found.</p>';
+                return;
+            }
+
+            movies.forEach(movie => {
+                const title = movie.Title;
+                const year = movie.Year;
+                const poster = movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/150'; // Placeholder image if poster not available
+
+                const movieElement = `
+                    <div class="movie">
+                        <img src="${poster}" alt="${title}">
+                        <p>${title}</p>
+                        <p>${year}</p>
+                    </div>
+                `;
+                movieContainer.innerHTML += movieElement;
+            });
+        }
+
+
+        // let ans='This is santosh Kumar';
+        // let year=2024;
+        // console.log(ans,20);
+        // let res=`This is santosh Kumar. ${year}`;
+        // console.log(res);
+    </script>
+</body>
+</html>

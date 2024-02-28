@@ -1,0 +1,70 @@
+
+
+1. MYSQL
+ sql based databse
+ data is stored in the table form(row,col)
+ RDBMS-relational database management system (RDBMS).
+ mysql is case-insensetive
+
+ name roll marks
+ santosh 1  60
+ santosh 1  60
+
+
+ 2.  MongoDB
+
+ json based database
+ data is stored in the document
+
+
+ let obj={
+    fname:"Santosh"
+ }
+
+ //json
+ let objSon={
+    "fname":"Santosh"
+ }
+
+
+ CRUD//SELECT, UPDATE, DELETE, INSERT, WHERE
+
+ Create  ---INSERT
+ Read    ----SELECT
+ Uudate  ----UPDATE
+ DELETE ----DELETE
+
+
+
+show databases;
+use sakila;
+show tables;
+select * from actor;
+-- database create command--
+create database pawan;
+-- use database  command--
+use pawan;
+-- show table command--
+show tables;
+create table student (
+roll_no int unique,
+fname varchar(55),
+lname varchar(55),
+gender varchar(5));
+-- insert data into table --
+insert into student( roll_no,fname,lname,gender)
+values
+(1,"santosh","kumar","Male");
+
+select * from student;
+insert into student( roll_no,fname,lname,gender)
+values
+(2,"santosh","kumar","Male"),
+(3,"santosh","kumar","Male"),
+(4,"santosh","kumar","Male"),
+(5,"santosh","kumar","Male"),
+(6,"santosh","kumar","Male"),
+(7,"santosh","kumar","Male");
+
+select * from student;
+

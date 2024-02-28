@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #video-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 20px;
+        }
+        .video {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube App</h1>
+    <div>
+        <input type="text" id="searchInput" placeholder="Enter search query">
+        <button onclick="searchVideos()">Search</button>
+    </div>
+
+    <div id="video-container">
+        <!-- Video thumbnails will be displayed here -->
+    </div>
+
+    <script>
+        // Function to fetch videos based on search query
+        async function searchVideos() {
+            const searchQuery = document.getElementById('searchInput').value;
+            const apiKey = 'AIzaSyAbItyorCQPcmNnwiWb_IRupSWeilkTYPM';
+            const maxResults = 100; // Number of videos to display
+
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&q=${searchQuery}&part=snippet&type=video&maxResults=${maxResults}`);
+            const data = await response.json();
+            console.log(data.items);
+
+            displayVideos(data.items);
+        }
+
+        // Function to display videos
+        function displayVideos(videos) {
+            const videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = ''; // Clear previous content
+
+            videos.forEach(video => {
+                const videoId = video.id.videoId;
+                const title = video.snippet.title;
+                const thumbnailUrl = video.snippet.thumbnails.medium.url;
+
+                const videoElement = `
+                    <div class="video">
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                        <p>${title}</p>
+                    </div>
+                `;
+                videoContainer.innerHTML += videoElement;
+            });
+        }
+    </script>
+
+
+</body>
+</html>
